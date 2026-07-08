@@ -1,8 +1,41 @@
 # Despliegue en Firebase
 
-El sitio usa **Firebase Hosting** (frontend) + **Cloud Functions** (API) +
-**Firestore** (datos) + **Cloud Storage** (imágenes). El panel `/admin` sigue
-funcionando online.
+## 🚀 Vía rápida: solo frontend (gratis, sin backend)
+
+Publica el sitio en minutos usando **solo Firebase Hosting**. No necesita plan
+Blaze ni Cloud Functions. El sitio se ve completo porque los datos vienen de los
+JSON incluidos (`src/data/*-fallback.json`).
+
+> Limitación: el panel `/admin` **no guarda online** en este modo. Para cambiar
+> servicios/proyectos/clientes, edita los JSON en `server/data/` (o
+> `src/data/*-fallback.json`) y vuelve a desplegar. Cuando quieras edición en
+> vivo, pasa al modo completo (más abajo).
+
+```bash
+npm install -g firebase-tools
+firebase login
+firebase use --add           # elige tu proyecto Firebase, alias "default"
+
+npm run build:static         # build en modo solo-frontend
+firebase deploy --only hosting
+```
+
+Listo. El `firebase.json` actual ya está configurado para hosting-only.
+
+---
+
+## Modo completo: Hosting + Cloud Functions + Firestore + Storage
+
+Con el panel `/admin` guardando **online** (datos en Firestore, imágenes en
+Storage). Requiere plan Blaze (con cuota gratuita amplia).
+
+Para activarlo, primero reemplaza la config de hosting-only por la completa:
+
+```bash
+cp firebase.full.json firebase.json
+```
+
+Luego sigue los pasos de abajo.
 
 ## Requisitos previos (una sola vez)
 

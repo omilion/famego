@@ -10,9 +10,14 @@ const FALLBACKS = {
 
 const byOrder = (a, b) => (a.order ?? 999) - (b.order ?? 999)
 
+// Modo "solo frontend": sin backend, se usan directamente los JSON de respaldo.
+// Se activa compilando con VITE_STATIC=true (deploy de Firebase Hosting solo).
+const STATIC_ONLY = import.meta.env.VITE_STATIC === 'true'
+
 // Obtiene una lista desde la API; si el backend no está disponible
 // usa la copia estática para que el sitio siga funcionando.
 export async function getAll(resource) {
+  if (STATIC_ONLY) return [...(FALLBACKS[resource] || [])].sort(byOrder)
   try {
     const res = await fetch(`/api/${resource}`)
     if (!res.ok) throw new Error('API no disponible')
@@ -27,6 +32,7 @@ export const getProjects = () => getAll('projects')
 export const getClients = () => getAll('clients')
 
 export async function getService(slug) {
+  if (STATIC_ONLY) return servicesFallback.find((s) => s.slug === slug) ?? null
   try {
     const res = await fetch(`/api/services/${slug}`)
     if (res.status === 404) return null

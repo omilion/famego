@@ -38,8 +38,22 @@ export default function Proyectos() {
           <h2 className="text-2xl font-900 tracking-tight text-ink-900 sm:text-3xl">Casos destacados</h2>
           <p className="mt-2 text-ink-600">Proyectos recientes y contratos vigentes informados por la empresa.</p>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {projects.map((p) => (
-              <Link key={p.id} to={`/proyectos/${p.id}`} className="group flex flex-col overflow-hidden rounded-xl border border-ink-800/10 bg-white shadow-sm transition-shadow hover:shadow-xl">
+            {projects.map((p, idx) => {
+              const delays = [
+                'animation-delay-100',
+                'animation-delay-200',
+                'animation-delay-300',
+                'animation-delay-400',
+                'animation-delay-500',
+                'animation-delay-600',
+              ]
+              const delayClass = delays[idx % delays.length]
+              return (
+                <Link
+                  key={p.id}
+                  to={`/proyectos/${p.id}`}
+                  className={`animate-fade-in-up ${delayClass} group flex flex-col overflow-hidden rounded-xl border border-ink-800/10 bg-white shadow-sm transition-shadow hover:shadow-xl`}
+                >
                 <div className="relative aspect-16/10 overflow-hidden">
                   <SmartImage src={p.image} alt={p.imageAlt} className="h-full w-full transition-transform duration-500 group-hover:scale-105" />
                   <span className="absolute left-3 top-3 rounded bg-brand-500 px-2.5 py-1 text-[11px] font-700 uppercase tracking-wide text-ink-950">{p.category}</span>
@@ -61,7 +75,8 @@ export default function Proyectos() {
                   </span>
                 </div>
               </Link>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -71,13 +86,24 @@ export default function Proyectos() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-900 tracking-tight text-ink-900 sm:text-3xl">Experiencia por industria</h2>
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {INDUSTRIES.map((ind) => (
-              <div key={ind.name} className="rounded-xl border-l-4 border-brand-500 bg-white p-6 shadow-sm">
+            {INDUSTRIES.map((ind, idx) => {
+              const delays = [
+                'animation-delay-100',
+                'animation-delay-200',
+                'animation-delay-300',
+              ]
+              const delayClass = delays[idx % delays.length]
+              return (
+                <div
+                  key={ind.name}
+                  className={`animate-fade-in-up ${delayClass} rounded-xl border-l-4 border-brand-500 bg-white p-6 shadow-sm`}
+                >
                 <h3 className="text-lg font-700 text-ink-900">{ind.name}</h3>
                 <p className="mt-2 text-sm font-600 text-brand-700">{ind.clients}</p>
                 <p className="mt-2 text-sm leading-relaxed text-ink-600">{ind.detail}</p>
               </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>

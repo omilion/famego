@@ -1,12 +1,23 @@
 import { Link } from 'react-router-dom'
 import ServiceIcon from './ServiceIcon.jsx'
 
-export default function ServiceCard({ service }) {
+export default function ServiceCard({ service, index = 0 }) {
+  const delays = [
+    'animation-delay-100',
+    'animation-delay-200',
+    'animation-delay-300',
+    'animation-delay-400',
+    'animation-delay-500',
+    'animation-delay-600',
+  ]
+  const delayClass = delays[index % delays.length]
+
   return (
     <Link
       to={`/servicios/${service.slug}`}
-      className="group relative flex flex-col overflow-hidden rounded-xl border border-ink-800/10 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:border-brand-500/40 hover:shadow-xl hover:shadow-ink-900/5"
+      className={`animate-fade-in-up ${delayClass} group relative flex flex-col overflow-hidden rounded-xl border border-ink-800/10 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:border-brand-500/40 hover:shadow-xl hover:shadow-ink-900/5`}
     >
+
       <span className="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-brand-500 transition-transform duration-300 group-hover:scale-x-100" />
       <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-lg bg-brand-50 text-brand-600 transition-colors group-hover:bg-brand-500 group-hover:text-white">
         <ServiceIcon slug={service.slug} />

@@ -49,16 +49,16 @@ export default function Home() {
             <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 px-4 py-1.5 text-sm font-600 text-brand-300">
               Ingeniería · Construcción · Obras Civiles · Mantenimiento
             </p>
-            <h1 className="text-4xl font-900 leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+            <h1 className="animate-fade-in-up text-4xl font-900 leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
               Ejecución integral para{' '}
               <span className="text-brand-400">proyectos exigentes</span>
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75 sm:text-xl">
+            <p className="animate-fade-in-up animation-delay-150 mt-6 max-w-2xl text-lg leading-relaxed text-white/75 sm:text-xl">
               Constructora orientada a proyectos corporativos, industriales, comerciales e
               infraestructura, con experiencia en habilitaciones, remodelaciones, mantenimiento y
               soluciones EPC llave en mano.
             </p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <div className="animate-fade-in-up animation-delay-300 mt-9 flex flex-col gap-3 sm:flex-row">
               <a
                 href={COMPANY.whatsapp}
                 target="_blank"
@@ -77,10 +77,10 @@ export default function Home() {
           </div>
 
           <div className="mt-14 grid grid-cols-2 gap-3 sm:max-w-2xl sm:grid-cols-4">
-            <Stat value="13+" label="Años" sub="de trayectoria" />
-            <Stat value="24+" label="Años exp." sub="profesional" />
-            <Stat value="EPC" label="Llave" sub="en mano" />
-            <Stat value="MOP" label="Inscripción" sub="SERVIU / MOP" />
+            <div className="animate-fade-in-up animation-delay-300"><Stat value="13+" label="Años" sub="de trayectoria" /></div>
+            <div className="animate-fade-in-up animation-delay-400"><Stat value="24+" label="Años exp." sub="profesional" /></div>
+            <div className="animate-fade-in-up animation-delay-500"><Stat value="EPC" label="Llave" sub="en mano" /></div>
+            <div className="animate-fade-in-up animation-delay-600"><Stat value="MOP" label="Inscripción" sub="SERVIU / MOP" /></div>
           </div>
         </div>
       </section>
@@ -148,7 +148,7 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((s) => <ServiceCard key={s.id} service={s} />)}
+            {services.map((s, idx) => <ServiceCard key={s.id} service={s} index={idx} />)}
           </div>
         </div>
       </section>
@@ -188,12 +188,23 @@ export default function Home() {
             </Link>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {projects.slice(0, 3).map((p) => (
-              <Link key={p.id} to={`/proyectos/${p.id}`} className="group flex flex-col overflow-hidden rounded-xl border border-ink-800/10 bg-white shadow-sm transition-shadow hover:shadow-xl">
-                <div className="relative aspect-16/10 overflow-hidden">
-                  <SmartImage src={p.image} alt={p.imageAlt} className="h-full w-full transition-transform duration-500 group-hover:scale-105" />
-                  <span className="absolute left-3 top-3 rounded bg-brand-500 px-2.5 py-1 text-[11px] font-700 uppercase tracking-wide text-ink-950">{p.category}</span>
-                </div>
+            {projects.slice(0, 3).map((p, idx) => {
+              const delays = [
+                'animation-delay-100',
+                'animation-delay-200',
+                'animation-delay-300',
+              ]
+              const delayClass = delays[idx % delays.length]
+              return (
+                <Link
+                  key={p.id}
+                  to={`/proyectos/${p.id}`}
+                  className={`animate-fade-in-up ${delayClass} group flex flex-col overflow-hidden rounded-xl border border-ink-800/10 bg-white shadow-sm transition-shadow hover:shadow-xl`}
+                >
+                  <div className="relative aspect-16/10 overflow-hidden">
+                    <SmartImage src={p.image} alt={p.imageAlt} className="h-full w-full transition-transform duration-500 group-hover:scale-105" />
+                    <span className="absolute left-3 top-3 rounded bg-brand-500 px-2.5 py-1 text-[11px] font-700 uppercase tracking-wide text-ink-950">{p.category}</span>
+                  </div>
                 <div className="flex flex-1 flex-col p-6">
                   <p className="text-xs font-700 uppercase tracking-wide text-brand-600">{p.client}</p>
                   <h3 className="mt-2 text-lg font-700 leading-snug text-ink-900">{p.title}</h3>
@@ -201,7 +212,8 @@ export default function Home() {
                   <p className="mt-3 text-xs text-ink-500">{p.period} · {p.meta}</p>
                 </div>
               </Link>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>

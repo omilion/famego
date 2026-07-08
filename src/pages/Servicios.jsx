@@ -32,7 +32,7 @@ export default function Servicios() {
       <section className="bg-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((s) => <ServiceCard key={s.id} service={s} />)}
+            {services.map((s, idx) => <ServiceCard key={s.id} service={s} index={idx} />)}
           </div>
         </div>
       </section>
