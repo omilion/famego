@@ -1,0 +1,110 @@
+[
+  {
+    "id": "diseno-y-arquitectura",
+    "slug": "diseno-y-arquitectura",
+    "order": 1,
+    "title": "Diseño y Arquitectura",
+    "shortDescription": "Diseño de recintos comerciales y corporativos con coordinación transversal de todas las especialidades: sanitarias, eléctricas, clima, incendio y obras civiles.",
+    "description": "Contamos con la capacidad para diseñar, según las necesidades de cada cliente, recintos comerciales durante la etapa de remodelación o habilitación. Trabajamos en torno a una coordinación transversal de todas las especialidades: instalaciones sanitarias, electricidad, corrientes débiles, detección y extinción de incendio, control de acceso, cálculo estructural, climatización, ventilación y obras civiles. Nos integramos tempranamente al requerimiento para asegurar un diseño ejecutable, dentro de plazo y presupuesto.",
+    "features": [
+      "Arquitectura para habilitaciones y remodelaciones comerciales",
+      "Coordinación de especialidades: sanitaria, eléctrica, corrientes débiles",
+      "Detección y extinción de incendio, control de acceso",
+      "Cálculo estructural, climatización y ventilación",
+      "Integración temprana con el mandante y sus operaciones"
+    ],
+    "image": "/images/servicio-diseno-arquitectura.jpg",
+    "imageAlt": "Arquitectos e ingenieros revisando planos de habilitación comercial en obra",
+    "keywords": "diseño y arquitectura comercial, coordinación de especialidades, habilitación de oficinas Chile"
+  },
+  {
+    "id": "proyectos-edificacion",
+    "slug": "proyectos-edificacion",
+    "order": 2,
+    "title": "Proyectos de Edificación",
+    "shortDescription": "Construcción de obras habitacionales, retail, educacionales, de salud y edificación en altura. Proyectos EPC llave en mano: estudio, ingeniería y ejecución.",
+    "description": "Nos especializamos en la construcción de obras habitacionales y obras destinadas a recintos comerciales, retail, educacional, salud y edificación en altura. Desarrollamos proyectos EPC —conocidos comúnmente como proyectos llave en mano— que incluyen el estudio del proyecto, el desarrollo de la ingeniería y la ejecución completa de la obra, con foco en plazo, seguridad y calidad.",
+    "features": [
+      "Obras habitacionales y edificación en altura",
+      "Recintos comerciales, retail, educacional y salud",
+      "Proyectos EPC / llave en mano de principio a fin",
+      "Estudio de proyecto y desarrollo de ingeniería",
+      "Ejecución con foco en plazo, seguridad y calidad"
+    ],
+    "image": "/images/servicio-edificacion.jpg",
+    "imageAlt": "Obra de edificación en altura con grúa torre y estructura de hormigón armado",
+    "keywords": "constructora edificación Chile, proyectos EPC llave en mano, construcción retail"
+  },
+  {
+    "id": "servicios-mantenimiento",
+    "slug": "servicios-mantenimiento",
+    "order": 3,
+    "title": "Servicios de Mantenimiento",
+    "shortDescription": "Mantenimiento preventivo y correctivo de recintos comerciales e industriales a nivel nacional, con equipos permanentes y respuesta multi-sucursal.",
+    "description": "Nos especializamos en la realización de mantenimientos generales de recintos comerciales a nivel nacional. Operamos con equipos permanentes en dependencias de clientes como Merck Group, Codelco, Pandora, MetLife y Provida, entregando mantenimiento preventivo y correctivo con continuidad operativa garantizada, atención multi-sucursal y coordinación con facilities y administración.",
+    "features": [
+      "Mantenimiento preventivo y correctivo",
+      "Cobertura multi-sucursal a nivel nacional",
+      "Equipos permanentes en instalaciones del cliente",
+      "Continuidad operativa del mandante como prioridad",
+      "Coordinación con facilities, operaciones y administración"
+    ],
+    "image": "/images/servicio-mantenimiento.jpg",
+    "imageAlt": "Técnico de mantenimiento trabajando en instalaciones de un recinto comercial",
+    "keywords": "mantenimiento recintos comerciales Chile, mantenimiento preventivo correctivo, facility services"
+  },
+  {
+    "id": "obras-civiles",
+    "slug": "obras-civiles",
+    "order": 4,
+    "title": "Obras Civiles",
+    "shortDescription": "Servicios sanitarios, eléctricos, hormigón estructural, pavimentos, tuberías, fundaciones y obras de arquitectura para necesidades públicas y privadas.",
+    "description": "Contamos con un equipo de profesionales dedicados a entregar de manera transversal la solución de necesidades públicas y privadas: servicios sanitarios, eléctricos y corrientes débiles, obras de hormigón estructural, pavimentos, obras de colocación de tuberías, obras de arquitectura y fundaciones. Ejecutamos con estándares de seguridad y calidad para mandantes corporativos e instituciones.",
+    "features": [
+      "Obras sanitarias, eléctricas y corrientes débiles",
+      "Hormigón estructural y fundaciones",
+      "Pavimentos y colocación de tuberías",
+      "Colectores de aguas lluvias, cámaras y ductos",
+      "Obras de arquitectura y terminaciones"
+    ],
+    "image": "/images/servicio-obras-civiles.jpg",
+    "imageAlt": "Faena de obras civiles con moldajes de hormigón estructural y enfierradura",
+    "keywords": "obras civiles Chile, hormigón estructural, obras sanitarias, fundaciones"
+  },
+  {
+    "id": "urbanizacion-infraestructura",
+    "slug": "urbanizacion-infraestructura",
+    "order": 5,
+    "title": "Urbanización e Infraestructura",
+    "shortDescription": "Pavimentación de calzadas, aceras, soleras, estacionamientos y muros de contención. Inscripciones vigentes SERVIU y MOP.",
+    "description": "Desarrollamos proyectos de urbanización destinados al tránsito de peatones y vehículos: pavimentación de calzadas, aceras, soleras, estacionamientos, muros de contención e instalaciones. Contamos con inscripciones SERVIU y MOP vigentes, lo que nos habilita para ejecutar proyectos de urbanización e infraestructura pública y privada en todo Chile.",
+    "features": [
+      "Pavimentación de calzadas y aceras",
+      "Soleras, estacionamientos e instalaciones",
+      "Muros de contención",
+      "Redes de alcantarillado, agua potable y gas",
+      "Inscripciones SERVIU y MOP vigentes"
+    ],
+    "image": "/images/servicio-urbanizacion.jpg",
+    "imageAlt": "Obras de pavimentación urbana con maquinaria pesada y trabajadores señalizando",
+    "keywords": "urbanización SERVIU MOP, pavimentación Chile, infraestructura urbana, muros de contención"
+  },
+  {
+    "id": "proyectos-industriales",
+    "slug": "proyectos-industriales",
+    "order": 6,
+    "title": "Proyectos Industriales",
+    "shortDescription": "Obras en plantas de producción y tratamiento: sistemas de hormigón, metálicos y mixtos, piping, montajes y mantenimiento de edificios habitados.",
+    "description": "Durante nuestra trayectoria hemos ejecutado diversas obras industriales con sistemas de hormigón, sistemas metálicos, sistemas de maderas, sistemas plásticos y sistemas mixtos. Realizamos mantenimientos de edificios habitados, montajes industriales, obras en plantas de tratamiento de aguas servidas y plantas de producción para clientes como Merck Group, Aguas Andinas, Lucchetti y Selar.",
+    "features": [
+      "Sistemas de hormigón, metálicos, maderas y mixtos",
+      "Plantas de tratamiento de aguas servidas",
+      "Plantas de producción y montajes industriales",
+      "Piping, estanques y pinturas industriales",
+      "Mantenimiento de edificios habitados en operación"
+    ],
+    "image": "/images/servicio-industrial.jpg",
+    "imageAlt": "Interior de planta industrial con estructuras metálicas y líneas de piping",
+    "keywords": "construcción industrial Chile, plantas de tratamiento, montajes industriales, piping"
+  }
+]

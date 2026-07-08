@@ -1,0 +1,16 @@
+node_modules
+dist
+.env
+*.log
+.DS_Store
+
+# Imágenes subidas desde el panel admin (excepto el marcador de carpeta)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Firebase
+.firebase/
+firebase-debug.log
+functions/node_modules/
+functions/service-account.json
+.firebaserc

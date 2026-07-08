@@ -1,0 +1,11 @@
+rules_version = '2';
+// Las imágenes se suben desde la Cloud Function (SDK admin) y se marcan como
+// públicas, por lo que se sirven vía URL pública de Storage. El acceso directo
+// del cliente (subida/borrado) queda bloqueado.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

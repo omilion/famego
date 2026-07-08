@@ -1,0 +1,74 @@
+[
+  {
+    "id": "gfk-nielseniq",
+    "order": 1,
+    "client": "GFK · NielsenIQ",
+    "title": "Habilitación y traslado de oficinas corporativas",
+    "category": "Comercial",
+    "period": "2025–2026",
+    "meta": "600 m²",
+    "description": "Obras civiles para nuevas oficinas en Providencia, incluyendo arquitectura, electricidad, sanitario, mobiliario y habilitación integral.",
+    "image": "/images/proyecto-nielseniq.jpg",
+    "imageAlt": "Oficinas corporativas NielsenIQ habilitadas con divisiones de madera y espacios colaborativos"
+  },
+  {
+    "id": "merck-group",
+    "order": 2,
+    "client": "Jones Lang LaSalle · Merck Group",
+    "title": "Mantenimiento planta de producción",
+    "category": "Industrial",
+    "period": "2022–a la fecha",
+    "meta": "Contrato vigente",
+    "description": "Equipo permanente para mantenimiento de dependencias comerciales e industriales de Merck Group en la Región Metropolitana.",
+    "image": "/images/proyecto-merck.jpg",
+    "imageAlt": "Planta de producción industrial de Merck con equipos de proceso"
+  },
+  {
+    "id": "metlife-provida",
+    "order": 3,
+    "client": "Cushman & Wakefield · MetLife / Provida",
+    "title": "Mantenimiento multi-zona de sucursales",
+    "category": "Comercial",
+    "period": "2024–a la fecha",
+    "meta": "Zona central, norte y sur",
+    "description": "Mantenimiento preventivo y correctivo para sucursales en zona central, norte y parte de la zona sur.",
+    "image": "/images/proyecto-metlife.jpg",
+    "imageAlt": "Fachada de edificio corporativo MetLife en zona céntrica de Santiago"
+  },
+  {
+    "id": "afp-provida-fachada",
+    "order": 4,
+    "client": "AFP Provida",
+    "title": "Remodelación de fachada arquitectónica",
+    "category": "Comercial",
+    "period": "2022–2023",
+    "meta": "Altura +15 m",
+    "description": "Estructuras metálicas en altura superior a 15 m, revestimientos Hunter Douglas y Cintac en fachada principal.",
+    "image": "/images/proyecto-provida-fachada.jpg",
+    "imageAlt": "Trabajos de remodelación de fachada arquitectónica en altura con revestimiento metálico"
+  },
+  {
+    "id": "schneider",
+    "order": 5,
+    "client": "Schneider",
+    "title": "Diseño, arquitectura y especialidades",
+    "category": "Comercial industrial",
+    "period": "2022",
+    "meta": "250–300 m²",
+    "description": "Proyecto de laboratorio y oficina con criterios de imagen Schneider, arquitectura funcional y coordinación de especialidades.",
+    "image": "/images/proyecto-schneider.jpg",
+    "imageAlt": "Laboratorio y oficina Schneider con diseño corporativo y equipamiento técnico"
+  },
+  {
+    "id": "metlife-pavimentacion",
+    "order": 6,
+    "client": "MetLife",
+    "title": "Pavimentación Las Hiedras · Torre Agustinas",
+    "category": "Comercial",
+    "period": "2021–2022",
+    "meta": "Obras civiles",
+    "description": "Pavimentación con redes de alcantarillado, corrientes débiles, agua potable, gas y movimientos de tierra en condiciones exigentes.",
+    "image": "/images/proyecto-metlife-pavimentacion.jpg",
+    "imageAlt": "Obras de pavimentación urbana con redes sanitarias en torre corporativa"
+  }
+]

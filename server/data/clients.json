@@ -1,0 +1,62 @@
+[
+  {
+    "id": "nielseniq",
+    "order": 1,
+    "name": "NielsenIQ"
+  },
+  {
+    "id": "merck-group",
+    "order": 2,
+    "name": "Merck Group"
+  },
+  {
+    "id": "codelco",
+    "order": 3,
+    "name": "Codelco"
+  },
+  {
+    "id": "pandora",
+    "order": 4,
+    "name": "Pandora"
+  },
+  {
+    "id": "metlife",
+    "order": 5,
+    "name": "MetLife"
+  },
+  {
+    "id": "provida",
+    "order": 6,
+    "name": "Provida"
+  },
+  {
+    "id": "schneider",
+    "order": 7,
+    "name": "Schneider"
+  },
+  {
+    "id": "aguas-andinas",
+    "order": 8,
+    "name": "Aguas Andinas"
+  },
+  {
+    "id": "lucchetti",
+    "order": 9,
+    "name": "Lucchetti"
+  },
+  {
+    "id": "tricot",
+    "order": 10,
+    "name": "Tricot"
+  },
+  {
+    "id": "aggreko",
+    "order": 11,
+    "name": "Aggreko"
+  },
+  {
+    "id": "selar",
+    "order": 12,
+    "name": "Selar"
+  }
+]

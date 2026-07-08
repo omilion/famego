@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.famego.cl/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.famego.cl/servicios</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.famego.cl/servicios/diseno-y-arquitectura</loc><priority>0.8</priority></url>
+  <url><loc>https://www.famego.cl/servicios/proyectos-edificacion</loc><priority>0.8</priority></url>
+  <url><loc>https://www.famego.cl/servicios/servicios-mantenimiento</loc><priority>0.8</priority></url>
+  <url><loc>https://www.famego.cl/servicios/obras-civiles</loc><priority>0.8</priority></url>
+  <url><loc>https://www.famego.cl/servicios/urbanizacion-infraestructura</loc><priority>0.8</priority></url>
+  <url><loc>https://www.famego.cl/servicios/proyectos-industriales</loc><priority>0.8</priority></url>
+  <url><loc>https://www.famego.cl/proyectos</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.famego.cl/nosotros</loc><priority>0.7</priority></url>
+  <url><loc>https://www.famego.cl/contacto</loc><priority>0.9</priority></url>
+</urlset>
